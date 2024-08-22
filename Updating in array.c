@@ -13,7 +13,7 @@ int main() {
 
     // Check for valid position input
     if (pos < 0 || pos > 7) {
-        printf("Error: Invalid position! Please enter a value between 0 and 7.\n");
+        printf("Error: Invalid position! Please enter a value between 0 to 7.\n");
         return 1;  // Exit the program with an error code
     }
 
