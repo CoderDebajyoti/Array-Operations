@@ -3,6 +3,13 @@
 int main() {
     int arr[8] = {6, 7, 78, 45, 65, 98, 68, 48}, i, pos, item;
 
+    // Display the previous array
+    printf("The Current array is: ");
+    for (i = 0; i < 8; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+    
     // Input the item to update
     printf("Enter the item: ");
     scanf("%d", &item);
@@ -16,13 +23,6 @@ int main() {
         printf("Error: Invalid position! Please enter a value between 0 to 7.\n");
         return 1;  // Exit the program with an error code
     }
-
-    // Display the previous array
-    printf("The previous array is: ");
-    for (i = 0; i < 8; i++) {
-        printf("%d ", arr[i]);
-    }
-    printf("\n");
 
     // Update the array at the specified position
     arr[pos] = item;
