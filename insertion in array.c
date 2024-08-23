@@ -4,6 +4,15 @@
 int main()
 {
 	int arr[8]={78,98,56,65,33,99,44,88},item,i,pos;
+
+	// Display the previous array
+   	 printf("The current array is: ");
+   	 for (i = 0; i < 8; i++) 
+    	{
+       	 	printf("%d ", arr[i]);
+   	 }
+   	 printf("\n");
+	
 	//get input from user
 	printf("Enter the item ypu want to insert: ");
 	scanf("%d",&item);
@@ -16,15 +25,7 @@ int main()
         printf("Error: Invalid position! Please enter a value between 0 to 7.\n");
         return 1;  // Exit the program with an error code
     }
-    
-    // Display the previous array
-    printf("The previous array is: ");
-    for (i = 0; i < 8; i++) 
-    {
-        printf("%d ", arr[i]);
-    }
-    printf("\n");
-    
+        
     //logic
     // Shift elements to the right to make space for the new element
 	for (i = 7; i > pos; i--) 
